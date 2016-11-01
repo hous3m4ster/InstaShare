@@ -6,4 +6,5 @@
 //
 include("./core/main.php");
 include("./core/frontend/header.html");
+include("./core/frontend/placeholder.html");
 ?>
