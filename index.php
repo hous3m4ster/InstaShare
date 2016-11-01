@@ -5,4 +5,5 @@
 //
 //
 include("./core/main.php");
+include("./core/frontend/header.html");
 ?>
