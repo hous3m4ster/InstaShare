@@ -2,13 +2,50 @@
 body{
     background-color: #efeded;
 }
+.img{
+    height: auto;
+    width: 80%;
+}
+.user{
+    padding: 20;
+}
+.normal-img {
+	background: #ccc;
+	border: solid 1px #000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+}
 </style>
 <div class="container">
     <div class="col-md-2"></div>
-    <div class="col-md-8" style="background-color: #ffffff;">
-        <p></p>
-        <center>
-            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=640%C3%97640&w=640&h=640" />
-        </center>
+    <div class="col-md-8 container" style="background-color: #ffffff;">
+        <div>
+            <p class="user">
+                <img src="//placehold.it/150x150" class="normal-img" style="height: 42; width:42;" />
+                Lorum Ipsum Dolor Sit Amet
+            </p>
+        </div>
+        <div>
+            <center>
+                <img class="img" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=640%C3%97640&w=640&h=640" />
+            </center>
+        </div>
     </div>
     <div class="col-md-2"></div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+
+      $(".rounded-img, .rounded-img2").load(function() {
+              $(this).wrap(function(){
+                        return '<span class="' + $(this).attr('class') + '" style="background:url(' + $(this).attr('src') + ') no-repeat center center; width: ' + $(this).width() + 'px; height: ' + $(this).height() + 'px;" />';
+                            });
+                  $(this).css("opacity","0");
+                    });
+
+});
+</script>
