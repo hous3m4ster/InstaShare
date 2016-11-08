@@ -18,7 +18,7 @@ body{
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
-}
+}/*TODO: bootstrapping image instead of own css*/
 </style>
 <div class="container">
     <div class="col-md-2"></div>
@@ -31,21 +31,9 @@ body{
         </div>
         <div>
             <center>
-                <img class="img" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=640%C3%97640&w=640&h=640" />
+                <img class="img" src="https://placehold.it/640x640" />
             </center>
         </div>
     </div>
     <div class="col-md-2"></div>
 </div>
-<script type="text/javascript">
-$(document).ready(function(){
-
-      $(".rounded-img, .rounded-img2").load(function() {
-              $(this).wrap(function(){
-                        return '<span class="' + $(this).attr('class') + '" style="background:url(' + $(this).attr('src') + ') no-repeat center center; width: ' + $(this).width() + 'px; height: ' + $(this).height() + 'px;" />';
-                            });
-                  $(this).css("opacity","0");
-                    });
-
-});
-</script>
